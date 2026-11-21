@@ -1,4 +1,4 @@
-![Slay the Spire 2 Save Editor]
+
 
 # Slay the Spire 2 Save Editor 2026
 
@@ -30,7 +30,7 @@ It reads and writes a local `.save` file. It does not attach to the running game
 | **Auto backup** | Copies the original save next to it before the first write, with a timestamp. | One bad edit never has to cost you the profile. |
 | **Portable settings** | A plain text file beside the app remembers your last folder and last slot. | No installer, no registry, no account. |
 
-![Card editing]
+
 
 ## How it works
 
@@ -39,7 +39,7 @@ It reads and writes a local `.save` file. It does not attach to the running game
 3. **Close the game, then point the editor at your save folder.** The usual path is under your user profile in the game's `saves` directory. The editor shows the slots it finds.
 4. **Change what you want and write.** The editor keeps a timestamped copy of the original first, then writes the file. Start the game and load the run.
 
-![Gold editing]
+
 
 ## Safety notice
 
@@ -53,7 +53,7 @@ This tool edits local `.save` files only. It does not touch game memory or any b
 
 Slay the Spire 2 is a single-player game, so a save edit affects only your own copy of the run. Keep the backup the editor makes until you are sure the run loads the way you wanted.
 
-![Relic editing]
+
 
 ## Requirements
 
