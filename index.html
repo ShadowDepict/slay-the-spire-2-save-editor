@@ -192,17 +192,21 @@ section[id]{scroll-margin-top:80px}
 .card .spec span b{display:block;margin-top:6px;font:700 13px/1 var(--mono);color:var(--violet);letter-spacing:.03em}
 
 /* ---------- BAND ---------- */
-.band{margin-top:86px;position:relative;min-height:430px;display:flex;align-items:center;background:url("assets/band.jpg") center 34%/cover no-repeat;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,6,17,.96) 0%,rgba(8,6,17,.76) 48%,rgba(8,6,17,.34) 100%)}
-.band-in{position:relative;z-index:2;width:min(1200px,calc(100% - 48px));margin-inline:auto;padding:66px 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:48px;align-items:center}
+.band{margin-top:86px;position:relative;padding:82px 0;overflow:hidden;background:#0A0616;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.band::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(66% 78% at 80% 26%,rgba(124,77,255,.20),rgba(8,6,17,0) 64%),
+  radial-gradient(46% 56% at 10% 86%,rgba(232,180,74,.10),rgba(8,6,17,0) 62%)}
+.band-in{position:relative;z-index:2;width:min(1200px,calc(100% - 48px));margin-inline:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.04fr);gap:52px;align-items:center}
 .band h2{font-size:clamp(1.8rem,4vw,2.9rem);max-width:19ch}
 .band p{margin-top:18px;max-width:46ch;font-size:14.5px;color:#D2C6E8}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12)}
-.stats div{background:rgba(10,7,22,.8);padding:20px}
-.stats b{display:block;font-family:var(--display);font-weight:700;font-size:34px;line-height:.92;color:var(--gold)}
-.stats div:nth-child(2) b{color:var(--violet)}
-.stats div:nth-child(3) b{color:var(--jade)}
-.stats small{display:block;margin-top:7px;font:600 9px/1.5 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--dim)}
+.band-facts{display:flex;flex-wrap:wrap;gap:9px;margin:26px 0 0;padding:0;list-style:none}
+.band-facts li{font:600 9.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.045);border:1px solid var(--line2);border-radius:999px;padding:10px 14px}
+.band-facts li b{color:var(--gold);font-weight:700;margin-right:5px}
+.shot{position:relative;border-radius:20px;border:1px solid var(--line2);overflow:hidden;background:#0A0616;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.shot img{display:block;width:100%;height:auto}
+.shot figcaption{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap;padding:13px 18px;border-top:1px solid var(--line);font:600 9px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.shot figcaption b{color:var(--jade);font-weight:700;display:inline-flex;align-items:center;gap:7px}
+.shot figcaption b::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--jade)}
 
 /* ---------- FOOTER ---------- */
 footer{border-top:1px solid var(--line);background:#05030C;padding:36px 0 42px}
@@ -256,8 +260,10 @@ footer p strong{color:var(--muted);font-weight:600}
   .card{flex-direction:column}
   .card-photo{width:100%;height:154px}
   .card-photo::after{background:linear-gradient(0deg,rgba(18,13,34,.97),rgba(18,13,34,.06) 72%)}
-  .stats b{font-size:28px}
-  .band{min-height:auto}
+  .band{padding:56px 0}
+  .band-facts{gap:8px;margin-top:22px}
+  .band-facts li{font-size:9px;padding:8px 11px}
+  .shot figcaption{padding:11px 14px;font-size:8.5px}
 }
 @media (prefers-reduced-motion:reduce){.spin,.live{animation:none}html{scroll-behavior:auto}.card:hover{transform:none}}
 </style>
@@ -282,7 +288,7 @@ footer p strong{color:var(--muted);font-weight:600}
 <main id="main">
 
 <section class="hero">
-  <div class="hero-bg" role="img" aria-label="Nave of a gothic cathedral with a carved wooden vaulted ceiling"></div>
+  <div class="hero-bg" role="img" aria-label="Fanned card spread over a dark violet background, mockup artwork for the editor"></div>
   <div class="hero-in">
     <p class="kicker">Windows 10 / 11 &middot; Offline &middot; Early access 2026</p>
     <h1><span class="s1">Slay the Spire 2</span><span class="s2">Save Editor</span></h1>
@@ -458,13 +464,17 @@ footer p strong{color:var(--muted);font-weight:600}
     <div>
       <h2>A save file is a file, not a running game</h2>
       <p>The editor works on the .save document sitting in your profile folder. It does not attach to the running process, read memory or keep anything open in the background. Close the game, edit the file, load the run again.</p>
+      <ul class="band-facts">
+        <li><b>5 Mar 2026</b>early access</li>
+        <li><b>1</b>player, offline</li>
+        <li><b>2</b>clicks to a backup</li>
+        <li><b>0</b>processes attached</li>
+      </ul>
     </div>
-    <div class="stats">
-      <div><b>5</b><small>March 2026 early access</small></div>
-      <div><b>1</b><small>Player, offline</small></div>
-      <div><b>2</b><small>Clicks to a backup</small></div>
-      <div><b>0</b><small>Processes attached</small></div>
-    </div>
+    <figure class="shot">
+      <img src="assets/window.jpg" alt="The editor window showing three save slots on the left and gold, max HP, cards and relics fields on the right" loading="lazy">
+      <figcaption><b>Slot 01 · The Defect</b><span>profile.save · read only until you write</span></figcaption>
+    </figure>
   </div>
 </section>
 
@@ -476,13 +486,12 @@ footer p strong{color:var(--muted);font-weight:600}
       <strong>Unofficial fan tool.</strong> Not affiliated with, endorsed by or sponsored by Mega Crit or Paradox Interactive. Slay the Spire is a trademark of its respective owners. This editor reads and writes local save files that you already own. It does not touch game memory, does not attach to a running process and does not include any online component. Keep a copy of your save before editing &mdash; a malformed file can cost you a run. Progress edits are for your own single-player copy; do not use them to misrepresent records in community ladders or events. Use at your own risk.
     </p>
     <div class="credits">
-      <b>Photography</b>
-      <span>Chester Cathedral nave &mdash; Michael D Beckwith, CC0</span>
-      <span>Cathedral tower at night &mdash; Paul Colin Hennig, CC BY-SA 4.0</span>
-      <span>Tarot spread with candles &mdash; Nosferattus, CC0</span>
-      <span>Bactrian gold coin &mdash; Eucratides I / BnF, public domain</span>
-      <span>Lough Erne shrine &mdash; Ceoil, CC BY-SA 4.0</span>
-      <span>Candle flames &mdash; Upcomingphotographerscorner, CC BY-SA 3.0</span>
+      <b>Artwork</b>
+      <span>Interface mockups and card panels</span>
+      <span>rendered for this project.</span>
+      <span>No game art or game assets included.</span>
+      <span>Card and relic glyphs are original</span>
+      <span>abstract shapes, not in-game icons.</span>
       <span style="margin-top:10px;color:#5B4E75">STS2 TOOLS &middot; 2026</span>
     </div>
   </div>

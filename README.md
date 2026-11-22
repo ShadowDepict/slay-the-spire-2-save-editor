@@ -1,4 +1,4 @@
-
+![Slay the Spire 2 Save Editor](assets/banner.jpg)
 
 # Slay the Spire 2 Save Editor 2026
 
@@ -30,7 +30,7 @@ It reads and writes a local `.save` file. It does not attach to the running game
 | **Auto backup** | Copies the original save next to it before the first write, with a timestamp. | One bad edit never has to cost you the profile. |
 | **Portable settings** | A plain text file beside the app remembers your last folder and last slot. | No installer, no registry, no account. |
 
-
+![Card editing](assets/card-cards.jpg)
 
 ## How it works
 
@@ -39,7 +39,7 @@ It reads and writes a local `.save` file. It does not attach to the running game
 3. **Close the game, then point the editor at your save folder.** The usual path is under your user profile in the game's `saves` directory. The editor shows the slots it finds.
 4. **Change what you want and write.** The editor keeps a timestamped copy of the original first, then writes the file. Start the game and load the run.
 
-
+![Gold editing](assets/card-gold.jpg)
 
 ## Safety notice
 
@@ -53,7 +53,7 @@ This tool edits local `.save` files only. It does not touch game memory or any b
 
 Slay the Spire 2 is a single-player game, so a save edit affects only your own copy of the run. Keep the backup the editor makes until you are sure the run loads the way you wanted.
 
-
+![Relic editing](assets/card-relics.jpg)
 
 ## Requirements
 
@@ -119,6 +119,6 @@ slay the spire 2 save editor, sts2 save editor, slay the spire 2 editor, unlock 
 
 ## Disclaimer
 
-Unofficial fan project. Not affiliated with, endorsed by or sponsored by Mega Crit or Paradox Interactive. Slay the Spire is a trademark of its respective owners. The editor works on local save files that you already own and is intended for your own single-player copy. Progress edits are for personal use; do not use them to misrepresent records in community ladders or organised events. Always keep a backup. Use at your own risk.
+All interface images in this repository are mockups rendered for this project. No game art, card illustrations or in-game assets are included; the card and relic glyphs are original abstract shapes.
 
-Photography: Chester Cathedral nave by Michael D Beckwith (CC0); cathedral tower at night by Paul Colin Hennig (CC BY-SA 4.0); tarot spread with candles by Nosferattus (CC0); Bactrian gold coin, Eucratides I / BnF (public domain); Lough Erne shrine by Ceoil (CC BY-SA 4.0); candle flames by Upcomingphotographerscorner (CC BY-SA 3.0). All images sourced from Wikimedia Commons.
+Unofficial fan project. Not affiliated with, endorsed by or sponsored by Mega Crit or Paradox Interactive. Slay the Spire is a trademark of its respective owners. The editor works on local save files that you already own and is intended for your own single-player copy. Progress edits are for personal use; do not use them to misrepresent records in community ladders or organised events. Always keep a backup. Use at your own risk.
